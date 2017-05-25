@@ -1,0 +1,122 @@
+@import "reset";
+@mixin flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.fp-tableCell {
+    vertical-align: top;
+}
+
+.bg1 {
+    background: url("../img/first_background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vw;
+    width: 100%;
+}
+
+.first-section {
+    @include flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    .header-section {
+        .logo {
+            display: inline-block;
+            h1 {
+                margin: 45px;
+                font-size: 32px;
+                color: #fff;
+                span {
+                    font-size: 27px;
+                }
+            }
+        }
+        .language-section {
+            display: inline-block;
+            font-size: 14px;
+            vertical-align: top;
+            margin: 50px;
+            margin-left: 70vw;
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 7px;
+                    a {
+                        color: #f1f1f1;
+                    }
+                }
+            }
+            .active {
+                color: #c99d4c;
+            }
+        }
+    }
+    .main-section {
+        flex-direction: column;
+        color: #c99d4c;
+        margin-right: 400px;
+        h2 {
+            font-size: 40px;
+            margin-left: 200px;
+        }
+        p {
+            font-size: 16px;
+            color: #d1d2d2;
+            line-height: 25px;
+            margin-left: 200px;
+            margin-top: 70px;
+        }
+        button {
+            width: 325px;
+            background: rgba(0, 0, 0, .0);
+            color: #f3f4f4;
+            font-size: 15px;
+            text-transform: uppercase;
+            border: 1px solid #c99d4c;
+            padding: 15px 45px;
+            margin-left: 200px;
+            margin-top: 40px;
+            &:hover {
+                font-size: 16px;
+                color: #c77d2c;
+                cursor: pointer;
+                img {
+                    height: 20px;
+                }
+            }
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+    .bottom-section {
+        @include flex;
+        align-items: center;
+        .phone {
+            margin-left: 50px;
+            margin-top: 150px;
+            p {
+                color: #c99d4c;
+                img {
+                    margin-right: 7px;
+                }
+            }
+        }
+        .aboutus {
+            display: inline-block;
+            margin-top: 140px;
+            margin-left: 32vw;
+            h3 {
+                font-size: 12px;
+                color: #fff;
+            }
+            img {
+                margin-top: 25px;
+                margin-left: 35px;
+            }
+        }
+    }
+}
