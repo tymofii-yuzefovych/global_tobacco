@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Golobal Tobacco</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="data:;base64,=">
 </head>
 
-<body>
+<body data-lang="ua">
 
     <div id="fullpage">
         <div class="section bg1">
@@ -21,11 +21,11 @@
                         <h1>Global <br><span>Tobacco</span></h1>
                     </div>
                     <div class="language-section">
-                        <ul>
-                            <li><a href="#" class="active" data-lang="ua">UA</a></li>
-                            <li><a href="#" data-lang="ru">RU</a></li>
-                            <li><a href="#" data-lang="en">EN</a></li>
-                            <li><a href="#" data-lang="pl">PL</a></li>
+                        <ul class="language-list">
+                            <li data-lang="ua"><a href="#" class="active">UA</a></li>
+                            <li data-lang="ru"><a href="#">RU</a></li>
+                            <li data-lang="en"><a href="#">EN</a></li>
+                            <li data-lang="pl"><a href="#">PL</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,23 +42,84 @@
                         <p><img src="img/phone.png" alt="" />+380 99 456-05-06</p>
                     </div>
                     <div class="aboutus">
-                        <h3>Більше про нас</h3>
-                        <img src="img/arrow.png" alt="arrow" />
+                        <a href="#secondPage/slide2" class="nextPage">
+                            <h3>
+                                Більше про нас</h3>
+                            <img src="img/arrow.png" alt="arrow" /></a>
                     </div>
 
                 </div>
             </div>
         </div>
 
+        <div class="section bg2" data-anchor="slide2">
+            <div class="second-section">
+                <div class="header-section">
+                    <div class="logo">
+                        <h1>Global <br><span>Tobacco</span></h1>
+                    </div>
+                </div>
+                <div class="main-section">
+                    <h2>Історія компанії</h2>
+                    <p>ТОВ Глобал Тобако Інтернешнл – український виробник тютюнових виробів. <br> Компанія започаткована у 2007 році на базі Монастириської тютюнової фабрики.<br> Зараз підприємство запустило власне виробництво та облаштувало новий завод
+                        у
+                        <br> Луцьку за адресою вул. Вахтангова, 12 а.
+                    </p>
+                    <p>З самого початку компанія Глобал Тобако Інтернешнл отримала усю необхідну<br> сертифікацію на виготовлення та реалізацію готової продукції, а незадовго після<br> того залучила до власного проекту іноземні інвестиції. Це дало новий
+                        поштовх <br>активному розвитку бренду та сприяло розширенню його виробництва. <br> Кінцева продукція Глобал Тобако Інтернешнл спрямована головним чином на<br>задоволення потреб внутрішнього ринку. Тим не менше, підприємство завжди<br>                        відкрите до співпраці з іноземними партнерами.</p>
+                    <p>Потужності виробництва дозволяють компанії надавати послуги з підготовки і<br> переробки сировини. </p>
+                </div>
+                <div class="bottom-section">
+                    <div class="contact">
+                        <a href="#thirdPage/slide3" class="nextPage">
+                            <h3>
+                                наші контакти</h3>
+                            <img src="img/arrow.png " alt="arrow " /></a>
+                    </div>
 
-        <div class="section second-section">
-
+                </div>
+            </div>
         </div>
-        <div class="section">3</div>
+        <div class="section bg3" data-anchor="slide3">
+            <div class="third-section">
+                <div class="main ">
+                    <div class="header-section">
+                        <div class="logo">
+                            <h1>Global <br><span>Tobacco</span></h1>
+                        </div>
+                    </div>
+                    <div class="main-section main-third">
+                        <div class="contact-form">
+                            <h2>Напишіть нам</h2>
+                            <form action="">
+                                <input type="text" placeholder="Ім'я" /><br>
+                                <input type="email" placeholder="Email" /><br>
+                                <h4>Питання або пропозиції</h4><br>
+                                <input type="text" /><br>
+                                <button type="button">відправити</button>
+                            </form>
+                        </div>
+                        <div class="main-second-section">
+                            <h2>Наші контакти</h2>
+                            <p><img src="img/house.png" alt="" />м. Луцьк, вул. Вахтангова, 12 а.</p>
+                            <p><img src="img/phone.png" alt="">+380 99 456-05-06</p>
+                            <p><img src="img/envelope.png" alt=""><a href="globaltabaco@gmail.com">globaltabaco@gmail.com</a></p>
+                        </div>
+                        <span>mirrolab</span>
+                    </div>
+
+
+
+                </div>
+                <div class="maps">
+
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js "></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>
